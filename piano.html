@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>piano</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="piano.css">
+    <script src="piano.js" defer></script>
+</head>
+<body>
+    <div class="out"></div>
+    <div class="whole">
+    <div class="bg-left"></div>
+    <div class="bg">
+    <div class="piano">
+        <div data-note="c3" class="key white">
+            <h1>z</h1>
+        </div>
+        <div data-note="c-3" class="key black">
+            <h1>s</h1>
+        </div>
+        <div data-note="d3" class="key white">
+            <h1>x</h1>
+        </div>
+        <div data-note="d-3" class="key black">
+            <h1>d</h1>
+        </div>
+        <div data-note="e3" class="key white">
+            <h1>c</h1>
+        </div>
+        <div data-note="f3" class="key white">
+            <h1>q</h1>
+        </div>
+        <div data-note="f-3" class="key black">
+            <h1>2</h1>
+        </div>
+        <div data-note="g3"class="key white">
+            <h1>w</h1>
+        </div>
+        <div data-note="g-3" class="key black">
+            <h1>3</h1>
+        </div>
+        <div data-note="a3" class="key white">
+            <h1>e</h1>
+        </div>
+        <div data-note="a-3" class="key black">
+            <h1>4</h1>
+        </div>
+        <div data-note="b3" class="key white">
+            <h1>r</h1>
+        </div>
+        <div data-note="c4" class="key white">
+            <h1>t</h1>
+        </div>
+        <div data-note="c-4" class="key black">
+            <h1>6</h1>
+        </div>
+        <div data-note="d4" class="key white">
+            <h1>y</h1>
+        </div>
+        <div data-note="d-4" class="key black">
+            <h1>7</h1>
+        </div>
+        <div data-note="e4" class="key white">
+            <h1>u</h1>
+        </div>
+        <div data-note="f4" class="key white">
+            <h1>i</h1>
+        </div>
+        <div data-note="f-4" class="key black">
+            <h1>9</h1>
+        </div>
+        <div data-note="g4" class="key white">
+            <h1>o</h1>
+        </div>
+        <div data-note="g-4" class="key black">
+            <h1>0</h1>
+        </div>
+        <div data-note="a4" class="key white">
+            <h1>p</h1>
+        </div>
+        <div data-note="a-4" class="key black">
+            <h1>-</h1>
+        </div>
+        <div data-note="b4" class="key white">
+            <h1>[</h1>
+        </div>
+        <div data-note="c5" class="key white">
+            <h1>]</h1>
+        </div>
+        <div data-note="c-5" class="key black">
+            <h1>g</h1>
+        </div>
+        <div data-note="d5" class="key white">
+            <h1>v</h1>
+        </div>
+        <div data-note="d-5" class="key black">
+            <h1>h</h1>
+        </div>
+        <div data-note="e5" class="key white">
+            <h1>b</h1>
+        </div>
+        <div data-note="f5" class="key white">
+            <h1>n</h1>
+        </div>
+        <div data-note="f-5" class="key black">
+            <h1>k</h1>
+        </div>
+        <div data-note="g5" class="key white">
+            <h1>m</h1>
+        </div>
+        <div data-note="g-5" class="key black">
+            <h1>l</h1>
+        </div>
+        <div data-note="a5" class="key white">
+            <h1>,</h1>
+        </div>
+        <div data-note="a-5" class="key black">
+            <h1>;</h1>
+        </div>
+        <div data-note="b5" class="key white">
+            <h1>.</h1>
+        </div> 
+        <div data-note="c6" class="key white">
+            <h1>/</h1>
+        </div>        
+       
+    </div>
+    <audio id="c3" src="c3.mp3"></audio>
+    <audio id="c-3" src="c-3.mp3"></audio>
+    <audio id="d3" src="d3.mp3"></audio>
+    <audio id="d-3" src="d-3.mp3"></audio>
+    <audio id="e3" src="e3.mp3"></audio>
+    <audio id="f3" src="f3.mp3"></audio>
+    <audio id="f-3" src="f-3.mp3"></audio>
+    <audio id="g3" src="g3.mp3"></audio>
+    <audio id="g-3" src="g-3.mp3"></audio>
+    <audio id="a3" src="a3.mp3"></audio>
+    <audio id="a-3" src="a-3.mp3"></audio>
+    <audio id="b3" src="b3.mp3"></audio>
+    <audio id="c4" src="c4.mp3"></audio>
+    <audio id="c-4" src="c-4.mp3"></audio>
+    <audio id="d4" src="d4.mp3"></audio>
+    <audio id="d-4" src="d-4.mp3"></audio>
+    <audio id="e4" src="e4.mp3"></audio>
+    <audio id="f4" src="f4.mp3"></audio>
+    <audio id="f-4" src="f-4.mp3"></audio>
+    <audio id="g4" src="g4.mp3"></audio>
+    <audio id="g-4" src="g-4.mp3"></audio>
+    <audio id="a4" src="a4.mp3"></audio>
+    <audio id="a-4" src="a-4.mp3"></audio>
+    <audio id="b4" src="b4.mp3"></audio>
+    <audio id="c5" src="c5.mp3"></audio>
+    <audio id="c-5" src="c-5.mp3"></audio>
+    <audio id="d5" src="d5.mp3"></audio>
+    <audio id="d-5" src="d-5.mp3"></audio>
+    <audio id="e5" src="e5.mp3"></audio>
+    <audio id="f5" src="f5.mp3"></audio>
+    <audio id="f-5" src="f-5.mp3"></audio>
+    <audio id="g5" src="g5.mp3"></audio>
+    <audio id="g-5" src="g-5.mp3"></audio>
+    <audio id="a5" src="a5.mp3"></audio>
+    <audio id="a-5" src="a-5.mp3"></audio>
+    <audio id="b5" src="b5.mp3"></audio>
+    <audio id="c6" src="c6.mp3"></audio>
+</div>
+<div class="bg-right"></div>
+</div>
+<br>
+</body>
+</html>
